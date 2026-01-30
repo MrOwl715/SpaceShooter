@@ -21,8 +21,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Player
+  - Enemy
   - 
   - 
   - 
@@ -54,6 +54,9 @@ TagManager:
   - name: Enemy
     uniqueID: 1152134415
     locked: 0
+  - name: Player
+    uniqueID: 2402381985
+    locked: 0
   - name: Planets
     uniqueID: 4094135763
     locked: 0
@@ -62,9 +65,6 @@ TagManager:
     locked: 0
   - name: Bonus
     uniqueID: 689362467
-    locked: 0
-  - name: Player
-    uniqueID: 2402381985
     locked: 0
   - name: VFX
     uniqueID: 738997965

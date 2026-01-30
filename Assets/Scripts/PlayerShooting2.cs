@@ -6,6 +6,8 @@ public class PlayerShooting2 : MonoBehaviour
     public GameObject bulletPrefab; // Kéo Prefab Bullet vào đây
     public float shootingInterval = 0.2f; // Thời gian giãn cách giữa 2 viên đạn [cite: 267]
 
+    public Vector3 bulletOffset = new Vector3(0,1f,0); // Vị trí bắn đạn so với máy bay
+
     private float lastBulletTime; // Lưu thời điểm bắn viên đạn trước đó [cite: 268]
 
     void Update()
@@ -33,6 +35,6 @@ public class PlayerShooting2 : MonoBehaviour
     {
         // Tạo viên đạn tại vị trí của máy bay (transform.position)
         // Quaternion.identity nghĩa là không xoay
-        Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+        Instantiate(bulletPrefab, transform.position + bulletOffset, Quaternion.identity);
     }
 }
