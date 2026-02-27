@@ -23,7 +23,7 @@ TagManager:
   - UI
   - Player
   - Enemy
-  - 
+  - GameOver
   - 
   - 
   - 
@@ -56,6 +56,9 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 2402381985
+    locked: 0
+  - name: GameOver
+    uniqueID: 745191521
     locked: 0
   - name: Planets
     uniqueID: 4094135763
